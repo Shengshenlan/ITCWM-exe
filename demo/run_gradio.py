@@ -7,6 +7,16 @@ from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 
 def load_chain():
+    if not os.path.exists('ITCWM'):
+        #验证SDK token
+        from modelscope.hub.api import HubApi
+        api = HubApi()
+        api.login('063eb00d-dffb-4a60-bd19-574ef5832033')
+
+        #模型下载
+        from modelscope import snapshot_download
+        model_dir = snapshot_download('Shengshenlan/ITCWM')
+    
     # 加载问答链
     # 定义 Embeddings
     embeddings = HuggingFaceEmbeddings(model_name="ITCWM/model/bge-large-zh")
