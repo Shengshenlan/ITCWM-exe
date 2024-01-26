@@ -11,12 +11,7 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 def load_chain():
-    if not os.path.exists('ITCWM'):
-        #验证SDK token
-        from modelscope.hub.api import HubApi
-        api = HubApi()
-        api.login('063eb00d-dffb-4a60-bd19-574ef5832033')
-
+    if not os.path.exists('Shengshenlan/ITCWM'):
         #模型下载
         from modelscope import snapshot_download
         model_dir = snapshot_download('Shengshenlan/ITCWM', cache_dir='./')
