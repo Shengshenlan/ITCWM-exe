@@ -30,7 +30,7 @@ def load_chain():
         embedding_function=embeddings
     )
 
-    llm = InternLM_LLM(model_path = "ITCWM/model/internlm-chat-7b")
+    llm = InternLM_LLM(model_path = "ITCWM/model/internlm2-merged")
 
     template = """使用以下上下文来回答最后的问题。如果你不知道答案，就说你不知道，不要试图编造答
     案。尽量使答案简明扼要。总是在回答的最后说“谢谢你的提问！”。
