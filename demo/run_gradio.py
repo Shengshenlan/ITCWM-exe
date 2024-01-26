@@ -15,14 +15,14 @@ def load_chain():
 
         #模型下载
         from modelscope import snapshot_download
-        model_dir = snapshot_download('Shengshenlan/ITCWM')
+        model_dir = snapshot_download('Shengshenlan/ITCWM', cache_dir='./')
     
     # 加载问答链
     # 定义 Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name="ITCWM/model/bge-large-zh")
+    embeddings = HuggingFaceEmbeddings(model_name="Shengshenlan/ITCWM/model/bge-large-zh")
 
     # 向量数据库持久化路径
-    persist_directory = 'ITCWM/data_base_small/vector_db/chroma'
+    persist_directory = 'Shengshenlan/ITCWM/data_base_small/vector_db/chroma'
 
     # 加载数据库
     vectordb = Chroma(
@@ -30,7 +30,7 @@ def load_chain():
         embedding_function=embeddings
     )
 
-    llm = InternLM_LLM(model_path = "ITCWM/model/internlm2-merged")
+    llm = InternLM_LLM(model_path = "Shengshenlan/ITCWM/model/internlm2-merged")
 
     template = """使用以下上下文来回答最后的问题。如果你不知道答案，就说你不知道，不要试图编造答
     案。尽量使答案简明扼要。总是在回答的最后说“谢谢你的提问！”。
