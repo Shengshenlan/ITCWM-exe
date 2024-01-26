@@ -6,6 +6,10 @@ import os
 from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 def load_chain():
     if not os.path.exists('ITCWM'):
         #验证SDK token
