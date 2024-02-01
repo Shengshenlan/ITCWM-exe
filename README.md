@@ -231,8 +231,8 @@ https://github.com/Shengshenlan/ITCWM-exe
 |-- demo
 |   |-- LLM.py       
 |   |-- create_db.py 
-|   `-- run_gradio.py
-`-- requirements.txt 
+|   |-- run_gradio.py
+|-- requirements.txt 
 ```
 
 2.代码修改
