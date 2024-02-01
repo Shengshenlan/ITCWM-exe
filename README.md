@@ -2,9 +2,7 @@
 
 # （ITCWM)中西医结合诊疗方案大模型
 
-
-
-
+![image-20240201133509706](assets/image-20240201133509706.png)
 
 <div align="center">
     <img src="https://img.shields.io/badge/Version-1.0
