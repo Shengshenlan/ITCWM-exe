@@ -18,10 +18,10 @@ def load_chain():
     
     # 加载问答链
     # 定义 Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name="Shengshenlan/ITCWM/model/bge-large-zh")
+    embeddings = HuggingFaceEmbeddings(model_name="Shengshenlan/ITCWM/model/sentence-transformer")
 
     # 向量数据库持久化路径
-    persist_directory = 'Shengshenlan/ITCWM/data_base_small/vector_db/chroma'
+    persist_directory = 'Shengshenlan/ITCWM/data_base_tiny/vector_db/chroma'
 
     # 加载数据库
     vectordb = Chroma(
