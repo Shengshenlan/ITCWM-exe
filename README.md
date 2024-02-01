@@ -2,7 +2,7 @@
 
 # （ITCWM)中西医结合诊疗方案大模型
 
-![image-20240201133509706](assets/image-20240201133509706.png)
+![image-20240201133509706](assets/logo.png)
 
 <div align="center">
     <img src="https://img.shields.io/badge/Version-1.0
@@ -42,14 +42,16 @@
 <body>
 <table style="width: 70%;">
   <tr>
-      <td style="width: 20%;"><div align="center"><strong>模型</strong></div></td>
-      <td style="width: 20%;"><div align="center"><strong>基座</strong></div></td>
-      <td style="width: 30%;"><div align="center"><strong>HuggingFace</strong></div></td>
+      <td style="width: 20%;"><div align="center"><strong>基座模型</strong></div></td>
+      <td style="width: 20%;"><div align="center"><strong>微调后的权重</strong></div></td>
+      <td style="width: 20%;"><div align="center"><strong>词向量模型</strong></div></td>
+      <td style="width: 30%;"><div align="center"><strong>项目权重地址</strong></div></td>
   </tr>
   <tr>
-      <td><center>InternLM-7B</center></td>
-      <td><center><a href="https://huggingface.co/BAAI/bge-large-zht">bge-large-zh</a></center></td>
-      <td><center>🤗<a href="https://internlm.intern-ai.org.cn/">InternLM</a></center></td>
+      <td><center> <a href="https://openxlab.org.cn/models/detail/OpenLMLab/InternLM-chat-7b"> InternLM-chat-7b</a></center></td>
+      <td><center> <a href="https://www.modelscope.cn/models/Shengshenlan/ITCWM/files"> merged</a></center></td>
+      <td><center> <a href="https://huggingface.co/BAAI/bge-large-zht"> bge-large-zh</a></center></td>
+      <td><center> <a href="https://www.modelscope.cn/models/Shengshenlan/ITCWM/summary">modelscope</a></center></td>
   </tr>
 </table>
 </body>
@@ -307,7 +309,7 @@ def load_chain():
 
 项目效果图：
 
-![img](https://fa6qwwph5la.feishu.cn/space/api/box/stream/download/asynccode/?code=NzRhMjA3NzdjZGQzZTE2ZWY1ODZiM2JmMjBlM2VjMzlfMGloeEFvQW5CV1dnaUtoalo2WVlHUE1yQXFLM3RxMzlfVG9rZW46UlVHMWJQdFd0b0llcmF4cXVZc2NrU2V5blVjXzE3MDY0OTk1NzE6MTcwNjUwMzE3MV9WNA)
+![img](assets/results.png)
 
 
 
