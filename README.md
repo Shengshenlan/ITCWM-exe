@@ -79,11 +79,17 @@
 
    ```bash
    git https://github.com/Shengshenlan/ITCWM-exe
-   cd Shengshenlan
-   pip install -e .
+   cd ITCWM-exe
+   pip install -r requirements.txt
    ```
 
+3. 项目运行
 
+   ```bash
+   python demo/run_gradio.py
+   ```
+
+   运行之后会自动下载权重和向量数据库，并运行Gradio界面。
 
 ## 🗃️数据集构建
 
