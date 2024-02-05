@@ -50,7 +50,7 @@
   <tr>
       <td><center> <a href="https://openxlab.org.cn/models/detail/OpenLMLab/InternLM-chat-7b"> InternLM-chat-7b</a></center></td>
       <td><center> <a href="https://www.modelscope.cn/models/Shengshenlan/ITCWM/files"> merged</a></center></td>
-      <td><center> <a href="https://huggingface.co/BAAI/bge-large-zht"> bge-large-zh</a></center></td>
+      <td><center> <a href="https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"> sentence-transformers</a></center></td>
       <td><center> <a href="https://www.modelscope.cn/models/Shengshenlan/ITCWM/summary">modelscope</a></center></td>
   </tr>
 </table>
